@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Контакты и бронь — Velor</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="site-header"><a class="logo" href="index.html">velor<span>.</span></a><button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="about.html">О нас</a><a class="active" href="contact.html">Контакты</a></nav><a class="header-cta" href="#booking">Забронировать столик <span>↗</span></a></header>
+<main>
+  <section class="page-hero"><p class="eyebrow">МЫ НА СВЯЗИ</p><h1>Заходите на <em>ужин</em></h1><p>Запланируйте визит или оставьте заявку на бронирование.</p></section>
+  <section class="section contact-layout">
+    <div class="contact-details"><p class="eyebrow">КОНТАКТЫ</p><h2>Будем рады<br><em>вашему визиту.</em></h2><div class="contact-line"><span class="contact-icon">⌖</span><div><small>АДРЕС</small><p>Ташкент, адрес уточняется</p></div></div><div class="contact-line"><span class="contact-icon">◷</span><div><small>ЧАСЫ РАБОТЫ</small><p>Ежедневно: 10:00–23:00</p></div></div><div class="contact-line"><span class="contact-icon">☎</span><div><small>ТЕЛЕФОН</small><p>+998 (90) 123-45-67</p></div></div><p class="contact-note">Адрес и телефон указаны как примеры — замените их на реальные данные вашего ресторана.</p></div>
+    <form class="booking-form" id="booking">
+      <p class="eyebrow">БРОНИРОВАНИЕ</p><h2>Найдём для вас<br><em>лучший столик.</em></h2>
+      <label for="name">Ваше имя</label><input id="name" name="name" type="text" placeholder="Как к вам обращаться?" required>
+      <div class="form-row"><div><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" placeholder="+998 ..." required></div><div><label for="guests">Гостей</label><select id="guests" name="guests"><option>1 человек</option><option selected>2 человека</option><option>3 человека</option><option>4 человека</option><option>5 человек</option><option>6+ человек</option></select></div></div>
+      <div class="form-row"><div><label for="date">Дата</label><input id="date" name="date" type="date" required></div><div><label for="time">Время</label><select id="time" name="time"><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option selected>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option><option>22:00</option></select></div></div>
+      <label for="comment">Пожелания <span class="optional">(необязательно)</span></label><textarea id="comment" name="comment" rows="3" placeholder="Например, столик у окна"></textarea>
+      <button class="button button-dark submit-button" type="submit">Отправить заявку <span>↗</span></button><p class="form-note">Демо-форма: заявка не отправляется в ресторан автоматически.</p><div class="form-message" role="status" aria-live="polite"></div>
+    </form>
+  </section>
+</main>
+<footer class="footer"><a class="logo" href="index.html">velor<span>.</span></a><p>Еда, люди и моменты, которые остаются.</p><div class="footer-links"><a href="menu.html">Меню</a><a href="about.html">О нас</a><a href="contact.html">Контакты</a></div><small>© 2026 Velor Restaurant. Все права защищены.</small></footer><script src="js/main.js"></script></body></html>
